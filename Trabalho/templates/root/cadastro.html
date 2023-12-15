@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block titulo %}Cadastrar-se{% endblock %}
+
+{% block principal %}
+<main class="container d-flex flex-column justify-content-center align-items-center my-4">
+    <hr>
+    <h1 class="display-6">
+        <b>Dados Para Cadastro</b>
+    </h1>
+    <hr>
+    <form method="post" enctype="multipart/form-data" class="w-100">
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="form-floating mb-3">
+                <input
+                    class="form-control"
+                    placeholder=""
+                    required=""
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    
+                   
+                >
+                <label for="nome">Nome</label>
+            </div>
+        </div>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="form-floating mb-3">
+                <input
+                    id="email"
+                    type="email"
+                    placeholder=""
+                    name="email"
+                    class="form-control"
+                    required=""
+                >
+                <label for="email">E-mail</label>
+            </div>
+        </div>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="form-floating mb-3">
+                <input
+                    type="password"
+                    name="senha"
+                    id="senha"
+                    class="form-control"
+                    placeholder=""
+                    required=""
+                >
+                <label for="senha">Senha</label>
+            </div>
+        </div>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="form-floating mb-3">
+                <input
+                    name="confsenha"
+                    type="password"
+                    placeholder=""
+                    id="confsenha"
+                    required=""
+                    class="form-control"
+                    
+                    
+                >
+                <label for="confsenha">Confirmação de Senha</label>
+            </div>
+        </div>
+        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="d-grid gap-4">
+                <button type="submit" class="btn btn-primary btn-lg">Salvar</button>
+                <a href="/" class="btn btn-light btn-lg border-black">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</div>
+</main>
+{% endblock %}
